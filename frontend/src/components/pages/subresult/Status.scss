@@ -1,0 +1,141 @@
+.succes {
+  background-color: #36b42d;
+}
+.succes-animation {
+  animation: succes-pulse 2s infinite;
+}
+
+.danger {
+  background-color: #CA0B00;
+}
+.danger-animation {
+  animation: danger-pulse 2s infinite;
+}
+
+.custom-modal {
+  position: relative;
+  width: 350px;
+  min-height: 350px;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 40px 10px;
+}
+.custom-modal .content { 
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+}
+.custom-modal .content .type {
+  font-size: 18px;
+  color: #999;
+}
+.custom-modal .content .message-type {
+  font-size: 24px;
+  color: #000;
+}
+.custom-modal .border-bottom {
+  position: absolute;
+  width: 300px;
+  height: 20px;
+  border-radius: 0 0 30px 30px;
+  bottom: -20px;
+  margin: 0 25px;
+}
+.custom-modal .icon-top {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -30px;
+  margin: 0 125px;
+  font-size: 30px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+}
+@keyframes succes-pulse { 
+  0% {
+    box-shadow: 0px 0px 30px 20px rgba(75, 181, 67, .2);
+  }
+  50% {
+    box-shadow: 0px 0px 30px 20px rgba(75, 181, 67, .4);
+  }
+  100% {
+    box-shadow: 0px 0px 30px 20px rgba(75, 181, 67, .2);
+  }
+}
+@keyframes danger-pulse { 
+  0% {
+    box-shadow: 0px 0px 30px 20px rgba(202, 11, 0, .2);
+  }
+  50% {
+    box-shadow: 0px 0px 30px 20px rgba(202, 11, 0, .4);
+  }
+  100% {
+    box-shadow: 0px 0px 30px 20px rgba(202, 11, 0, .2);
+  }
+}
+
+
+.page-wrapper {
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+@media only screen and (max-width: 800px) {
+  .page-wrapper {
+    flex-direction: column;
+  }
+}
+
+.button-box-green {
+  background: #36b42d;;
+  width: 80%;
+  border-radius: 20px;
+  outline: 0;
+  cursor: pointer;
+
+  border: none;
+  box-shadow: 2px 2px 10px rgba(#36b42d, .5);
+  transition: all .5s ease-in-out;
+  &:hover {
+    background: darken(#36b42d, 5%);
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+  }
+}
+
+.button-box-red {
+  background: #e72424;;
+  width: 80%;
+  border-radius: 20px;
+  outline: 0;
+  cursor: pointer;
+
+  border: none;
+  box-shadow: 2px 2px 10px rgba(#e72424, .5);
+  transition: all .5s ease-in-out;
+  &:hover {
+    background: darken(#e72424, 5%);
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+  }
+}
+
+.green{
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: "Arial";
+}
+
+.red{
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: "Arial";
+}
